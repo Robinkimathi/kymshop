@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - Ecommerce Website</title>
+    <link rel="stylesheet" type="text/css" href="signin.css">
+</head>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 224, 221);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form {
+    background-color: #f88807;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(212, 4, 178, 0.2);
+    text-align: center;
+}
+
+.signin-form h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 7px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.signin-form button {
+    background-color: #04f1d2;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.signin-form button:hover {
+    background-color: #641a08;
+}
+
+p{
+    text-align: center;
+    padding-top: 7px;
+    
+}
+
+</style>
+<body>
+     
+    <div class="container">
+        <form class="signin-form" action="signin_process.php" method="post">
+            <HR color = "#04f1d2" size = "5">
+                <p> <marquee behavior="right-left">sign in to your account</marquee></p>
+            <h1>Sign In</h1>
+            <input type="username" name="username" placeholder="username" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+</body>
+</html>
